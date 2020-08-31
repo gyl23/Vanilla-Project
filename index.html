@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vanilla-Project</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/200b8902d2.js" crossorigin="anonymous"> </script>
+        <link rel="stylesheet" href="src/style.css" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"> </script>
+    </head>
+    <!-- Main app area -->
+    <body class="weather-app-wrapper">
+        <div class="weather-app">
+            <!-- Search bar, time, city, etc -->
+            <div class="top-half">
+                <h1 id="current-city">[city cannot be displayed]</h1>
+                <h2 id="date-time">[date cannot be displayed]</h2>
+                <form>
+                    <input type="text" placeholder="Enter Location" id="search-city"/>
+                    <input type="submit" class="active" id="search-form"/>
+                </form>
+                <br>
+                <div>
+                    <ul>
+                        <li id="temperature"></li>
+                        <li id="min-max-temperature"></li>
+                        <li id="humidity"></li>
+                    </ul>
+                    <div class="icon-temp">
+                        <img id= "main-img" src="https://ssl.gstatic.com/onebox/weather/64/fog.png" 
+                            alt="Smoke" />
+                       
+                    </div>
+                    <br>
+                    <div class="forecast-bar">
+                        <div class="forcast">
+                            <p id= "slot_0"></p>
+                            <p id="forcast_0">hi</p>
+                            <img id="icon_0"></img>
+                        </div>
+                        <div class="forcast">
+                                <p id="slot_1"></p>
+                            <p id="forcast_1">hi</p>
+                            <img id="icon_1"></img>
+                        </div>
+                        <div class="forcast">
+                                <p id="slot_2"></p>
+                            <p id="forcast_2">hi</p>
+                            <img id="icon_2"></img>
+                        </div>
+                        <div class="forcast">
+                                <p id="slot_3"></p>
+                            <p id="forcast_3">hi</p>
+                            <img id="icon_3"></img>
+                        </div>
+                        <div class="forcast">
+                                <p id="slot_4"></p>
+                            <p id="forcast_4">hi</p>
+                            <img id="icon_4"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Days -->
+            <div id="bottom-half-js" class="bottom-half-container"></div>
+        </div>
+        <!-- Footer (open source) -->
+        <div class="open-sourced">
+            <small>
+            <p><a href="https://github.com/gyl23/Vanilla-Project">Open Sourced Code</a> by Grace Lea</p>
+            </small>
+        </div>
+        <script src="src/script.js"></script>
+    </body>
+</html>
