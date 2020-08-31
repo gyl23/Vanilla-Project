@@ -22,12 +22,17 @@
                     <input type="text" placeholder="Enter Location" id="search-city"/>
                     <input type="submit" class="active" id="search-form"/>
                 </form>
+                <button id = "unitButton" onclick="swapUnit()">
+                    Change Unit
+                </button>
                 <br>
                 <div>
                     <ul>
                         <li id="temperature"></li>
                         <li id="min-max-temperature"></li>
                         <li id="humidity"></li>
+                        <li id="wind-speed"></li>
+                        <li id="precipitation"></li>
                     </ul>
                     <div class="icon-temp">
                         <img id= "main-img" src="https://ssl.gstatic.com/onebox/weather/64/fog.png" 
